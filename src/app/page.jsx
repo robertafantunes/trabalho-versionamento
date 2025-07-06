@@ -1,16 +1,18 @@
+import { Menu } from "@/components/Menu";
+
 export default function Home() {
   return (
-    <>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1>
-          Seja bem-vindo ao Trabalho de Versionamento de Software!
-          <br />
-        </h1>
-        <p>
-          Todas as informações necessárias realização do trabalho encontra-se no
-          arquivo <span className="">README.md</span>
+    <div className="flex flex-col h-screen">
+      <Menu />
+      <main className="flex flex-col items-center justify-center text-center flex-1 px-4 py-8 gap-4">
+        <p className="text-base text-neutral-700 uppercase tracking-wider">
+          Bem-vindo ao
         </p>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900 ">
+          Trabalho de Versionamento
+        </h1>
+        <p className="text-base text-neutral-700">da Roberta</p>
       </main>
-    </>
+    </div>
   );
 }
